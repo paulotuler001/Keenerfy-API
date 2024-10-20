@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Keenerfy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dba468daa793fbc6ee0a482273787ec578dfe191")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55532529f78db0aa73c1c01b1c3167d3a03d0120")]
 [assembly: System.Reflection.AssemblyProductAttribute("Keenerfy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Keenerfy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

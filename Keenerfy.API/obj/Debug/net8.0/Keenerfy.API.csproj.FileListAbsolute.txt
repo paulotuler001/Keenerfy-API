@@ -140,3 +140,9 @@ C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.API\bin\Debug\net8.0\Keenerfy.S
 C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.API\bin\Debug\net8.0\Keenerfy.Shared.Data.pdb
 C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.API\bin\Debug\net8.0\Keenerfy.Shared.Models.pdb
 C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.API\obj\Debug\net8.0\Keenerfy.API.sourcelink.json
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.API\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.API\obj\Debug\net8.0\Keenerfy.API.MvcApplicationPartsAssemblyInfo.cs
