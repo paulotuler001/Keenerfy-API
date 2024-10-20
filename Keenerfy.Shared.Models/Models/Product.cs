@@ -2,14 +2,19 @@
 
 public class Product
 {
-    public Product(string name, string code, string description, float price, string link, int stock_id)
+
+    public Product()
+    {
+
+    }
+    public Product(string name, string code, string description, float price, string link, int stock)
     {
         Name = name;
         Code = code;
         Description = description;
         Price = price;
         Link = link;
-        Stock_id = stock_id;
+        Stock = stock;
     }
 
     public int Id {  get; set; }
@@ -18,5 +23,6 @@ public class Product
     public string Description { get; set; }
     public float? Price { get; set; }
     public string Link { get; set; }
-    public int Stock_id { get; set; }
+    public int Stock { get; set; }
+    public virtual ICollection<Sale> Sales { get; set; }
 }
