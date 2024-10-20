@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy\\Keenerfy\\Database\\DAL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Keenerfy\\Database\\DAL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy\\Keenerfy\\Service\\ProductService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Keenerfy\\Service\\ProductService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy\\Keenerfy\\Models\\Product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Keenerfy\\Models\\Product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy\\Keenerfy\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Keenerfy\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy\\Keenerfy\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Keenerfy\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy\\Keenerfy\\Models\\Product.cs",
+              "RelativeToolTip": "Keenerfy\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T18:20:52.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy\\Keenerfy\\Service\\ProductService.cs",
+              "RelativeDocumentMoniker": "Keenerfy\\Service\\ProductService.cs",
+              "ToolTip": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy\\Keenerfy\\Service\\ProductService.cs",
+              "RelativeToolTip": "Keenerfy\\Service\\ProductService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T18:22:39.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DAL.cs",
+              "DocumentMoniker": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy\\Keenerfy\\Database\\DAL.cs",
+              "RelativeDocumentMoniker": "Keenerfy\\Database\\DAL.cs",
+              "ToolTip": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy\\Keenerfy\\Database\\DAL.cs",
+              "RelativeToolTip": "Keenerfy\\Database\\DAL.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAawBIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T18:19:55.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy\\Keenerfy\\Program.cs",
+              "RelativeDocumentMoniker": "Keenerfy\\Program.cs",
+              "ToolTip": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy\\Keenerfy\\Program.cs",
+              "RelativeToolTip": "Keenerfy\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T18:18:06.557Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

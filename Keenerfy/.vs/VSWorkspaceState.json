@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Keenerfy",
+    "\\Keenerfy\\Database",
+    "\\Keenerfy\\Models",
+    "\\Keenerfy\\Service",
+    "\\Migrations"
+  ],
+  "SelectedNode": "\\Keenerfy\\Database\\DAL.cs",
+  "PreviewInSolutionExplorer": false
+}
