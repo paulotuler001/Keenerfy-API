@@ -1,9 +1,4 @@
 ﻿using Keenerfy.Database;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Keenerfy.Keenerfy.Database;
 public class DAL<T> where T : class
@@ -14,16 +9,16 @@ public class DAL<T> where T : class
     {
         this.context = context;
     }
-    public IEnumerable<T> Listar()
+    public IEnumerable<T> List()
     {
         return context.Set<T>().ToList();
     }
-    public void Adicionar(T obj)
+    public void Create(T obj)
     {
         context.Set<T>().Add(obj);
         context.SaveChanges();
     }
-    public void Remover(T obj)
+    public void Remove(T obj)
     {
         context.Set<T>().Remove(obj);
         context.SaveChanges();
