@@ -12,6 +12,12 @@ C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy\obj\Debug\net8.0\refint\Keenerf
 C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy\obj\Debug\net8.0\Keenerfy.pdb
 C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy\obj\Debug\net8.0\Keenerfy.genruntimeconfig.cache
 C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy\obj\Debug\net8.0\ref\Keenerfy.dll
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy\obj\Debug\net8.0\Keenerfy.csproj.Up2Date
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy\obj\Debug\net8.0\Keenerfy.sourcelink.json
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy\bin\Debug\net8.0\Keenerfy.Shared.Data.dll
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy\bin\Debug\net8.0\Keenerfy.Shared.Models.dll
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy\bin\Debug\net8.0\Keenerfy.Shared.Data.pdb
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy\bin\Debug\net8.0\Keenerfy.Shared.Models.pdb
 C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy\bin\Debug\net8.0\Keenerfy.exe
 C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy\bin\Debug\net8.0\Azure.Identity.dll
@@ -127,9 +133,3 @@ C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy\bin\Debug\net8.0\runtimes\win\l
 C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy\obj\Debug\net8.0\Keenerfy.csproj.Up2Date
-C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy\obj\Debug\net8.0\Keenerfy.sourcelink.json
-C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy\bin\Debug\net8.0\Keenerfy.Shared.Data.dll
-C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy\bin\Debug\net8.0\Keenerfy.Shared.Models.dll
-C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy\bin\Debug\net8.0\Keenerfy.Shared.Data.pdb
-C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy\bin\Debug\net8.0\Keenerfy.Shared.Models.pdb

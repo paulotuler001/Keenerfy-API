@@ -12,3 +12,4 @@ C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.Shared.Models\obj\Debug\net8.0\
 C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.Shared.Models\obj\Debug\net8.0\Keenerfy.Shared.Models.pdb
 C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.Shared.Models\obj\Debug\net8.0\Keenerfy.Shared.Models.genruntimeconfig.cache
 C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.Shared.Models\obj\Debug\net8.0\ref\Keenerfy.Shared.Models.dll
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.Shared.Models\obj\Debug\net8.0\Keenerfy.Shared.Models.sourcelink.json

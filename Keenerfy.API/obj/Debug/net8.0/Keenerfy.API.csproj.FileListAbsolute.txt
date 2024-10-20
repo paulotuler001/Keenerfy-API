@@ -139,3 +139,4 @@ C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.API\bin\Debug\net8.0\Keenerfy.S
 C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.API\bin\Debug\net8.0\Keenerfy.Shared.Models.dll
 C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.API\bin\Debug\net8.0\Keenerfy.Shared.Data.pdb
 C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.API\bin\Debug\net8.0\Keenerfy.Shared.Models.pdb
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.API\obj\Debug\net8.0\Keenerfy.API.sourcelink.json
