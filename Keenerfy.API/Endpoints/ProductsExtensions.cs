@@ -1,6 +1,8 @@
 ﻿using Keenerfy.API.Requests;
+using Keenerfy.Database;
 using Keenerfy.Keenerfy.Database;
 using Keenerfy.Models;
+using Keenerfy.Shared.Models.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Keenerfy.API.Endpoints;
@@ -18,11 +20,19 @@ public static class ProductsExtensions
             return dal.FindBy(a => a.Name.ToUpper().Equals(name.ToUpper()));
         });
 
-        app.MapPost("/products", ([FromServices] DAL<Product> dal, [FromBody] ProductsRequest productRequest) =>
+        app.MapPost("/products", ([FromServices] DAL<Product> dal, [FromBody] ProductsRequest productRequest, int quantity) =>
         {
-            var product = new Product(productRequest.Name, productRequest.Code, productRequest.Description, productRequest.Price, productRequest.Link, productRequest.Stock_id);
-            dal.Create(product);
-            return Results.Ok(product);
+            var productToCreate = new Product(productRequest.Name, productRequest.Code, productRequest.Description, productRequest.Price, productRequest.Link, productRequest.Stock);
+            dal.Create(productToCreate);
+            if(quantity > 0)
+            {
+                DAL<PurchaseOrder> purchaseOrderDal = new DAL<PurchaseOrder>(new KeenerfyContext());
+
+                PurchaseOrder purchaseOrder = new(DateTime.Now, quantity, productToCreate);
+                purchaseOrderDal.Create(purchaseOrder);
+            }
+
+            return Results.Ok(productToCreate);
         });
 
         app.MapPut("/products", ([FromServices] DAL<Product> dal, [FromBody] ProductsRequestEdit productRequestEdit) =>
@@ -34,6 +44,14 @@ public static class ProductsExtensions
             }
             dal.Update(productToUpdate);
             return Results.Ok(productToUpdate);
+        });
+
+        app.MapDelete("/products/{Code}", ([FromServices] DAL<Product> dal, [FromBody] string Code) =>
+        {
+            var productToDelete = dal.FindBy(prod => prod.Code.ToUpper().Equals(Code.ToUpper()));
+            dal.Remove(productToDelete);
+
+            return Results.NoContent();
         });
     }
 }
