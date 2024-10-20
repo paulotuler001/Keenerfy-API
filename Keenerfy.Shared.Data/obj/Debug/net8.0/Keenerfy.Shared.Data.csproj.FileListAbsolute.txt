@@ -1,0 +1,17 @@
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.Shared.Data\obj\Debug\net8.0\Keenerfy.Shared.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.Shared.Data\obj\Debug\net8.0\Keenerfy.Shared.Data.AssemblyInfoInputs.cache
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.Shared.Data\obj\Debug\net8.0\Keenerfy.Shared.Data.AssemblyInfo.cs
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.Shared.Data\obj\Debug\net8.0\Keenerfy.Shared.Data.csproj.CoreCompileInputs.cache
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.Shared.Data\bin\Debug\net8.0\Keenerfy.Shared.Data.deps.json
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.Shared.Data\bin\Debug\net8.0\Keenerfy.Shared.Data.runtimeconfig.json
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.Shared.Data\bin\Debug\net8.0\Keenerfy.Shared.Data.dll
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.Shared.Data\bin\Debug\net8.0\Keenerfy.Shared.Data.pdb
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.Shared.Data\bin\Debug\net8.0\Keenerfy.Shared.Models.dll
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.Shared.Data\bin\Debug\net8.0\Keenerfy.Shared.Models.pdb
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.Shared.Data\obj\Debug\net8.0\Keenerfy.Shared.Data.csproj.AssemblyReference.cache
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.Shared.Data\obj\Debug\net8.0\Keenerfy.46011AAC.Up2Date
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.Shared.Data\obj\Debug\net8.0\Keenerfy.Shared.Data.dll
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.Shared.Data\obj\Debug\net8.0\refint\Keenerfy.Shared.Data.dll
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.Shared.Data\obj\Debug\net8.0\Keenerfy.Shared.Data.pdb
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.Shared.Data\obj\Debug\net8.0\Keenerfy.Shared.Data.genruntimeconfig.cache
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.Shared.Data\obj\Debug\net8.0\ref\Keenerfy.Shared.Data.dll
