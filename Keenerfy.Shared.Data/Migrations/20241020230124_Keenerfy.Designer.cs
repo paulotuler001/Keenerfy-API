@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Keenerfy.Shared.Data.Migrations
 {
     [DbContext(typeof(KeenerfyContext))]
-    [Migration("20241020125948_Keenerfy")]
+    [Migration("20241020230124_Keenerfy")]
     partial class Keenerfy
     {
         /// <inheritdoc />
@@ -21,6 +21,9 @@ namespace Keenerfy.Shared.Data.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "8.0.10")
+                .HasAnnotation("Proxies:ChangeTracking", false)
+                .HasAnnotation("Proxies:CheckEquality", false)
+                .HasAnnotation("Proxies:LazyLoading", true)
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -48,28 +51,12 @@ namespace Keenerfy.Shared.Data.Migrations
                     b.Property<float?>("Price")
                         .HasColumnType("real");
 
-                    b.Property<int>("Stock_id")
+                    b.Property<int>("Stock")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.ToTable("Products");
-                });
-
-            modelBuilder.Entity("Keenerfy.Models.ProductSale", b =>
-                {
-                    b.Property<int>("Product_id")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Sale_id")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.HasKey("Product_id", "Sale_id");
-
-                    b.ToTable("ProductSales");
                 });
 
             modelBuilder.Entity("Keenerfy.Models.Sale", b =>
@@ -83,31 +70,22 @@ namespace Keenerfy.Shared.Data.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("User_id")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Sales");
-                });
-
-            modelBuilder.Entity("Keenerfy.Models.Stock", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("Product_id")
+                    b.Property<int>("ProductId")
                         .HasColumnType("int");
 
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
+                    b.Property<int?>("UsersId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
-                    b.ToTable("Stocks");
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("UsersId");
+
+                    b.ToTable("Sales");
                 });
 
             modelBuilder.Entity("Keenerfy.Models.User", b =>
@@ -142,6 +120,28 @@ namespace Keenerfy.Shared.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("Keenerfy.Models.Sale", b =>
+                {
+                    b.HasOne("Keenerfy.Models.Product", "Product")
+                        .WithMany("Sales")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Keenerfy.Models.User", "Users")
+                        .WithMany()
+                        .HasForeignKey("UsersId");
+
+                    b.Navigation("Product");
+
+                    b.Navigation("Users");
+                });
+
+            modelBuilder.Entity("Keenerfy.Models.Product", b =>
+                {
+                    b.Navigation("Sales");
                 });
 #pragma warning restore 612, 618
         }
