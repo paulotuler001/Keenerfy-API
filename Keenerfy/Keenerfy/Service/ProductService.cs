@@ -11,23 +11,18 @@ internal class ProductService
 {
     public void NewProduct(DAL<Product> product)
     {
-        Product product1 = new();
-
-        Console.WriteLine("Digite o nome do seu novo produto");
+                Console.WriteLine("Digite o nome do seu novo produto");
         string product_name = Console.ReadLine();
         Console.WriteLine("Descrição");
         string description = Console.ReadLine();
         Console.WriteLine("Code");
         string code = Console.ReadLine();
-        product1.Name = product_name;
-        product1.Description = description;
-        product1.Code = code.ToString();
-        product1.Price = 105.4f;
-        product.Adicionar(product1);
+        Product product1 = new(product_name, code.ToString(), description, 105.4f, null, 1);
+        product.Create(product1);
     }
     public IEnumerable<Product> GetAll(DAL<Product> product)
     {
-        return product.Listar();
+        return product.List();
     }
     public void UpdateProduct(DAL<Product> product)
     {
@@ -43,6 +38,6 @@ internal class ProductService
         Console.WriteLine("Digite o nome do product que voce deseja editar");
         string productName = Console.ReadLine();
         Product productFound = product.FindBy(a => a.Name.Equals(productName));
-        product.Remover(productFound);
+        product.Remove(productFound);
     }
 }
