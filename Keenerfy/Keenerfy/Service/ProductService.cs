@@ -11,13 +11,13 @@ internal class ProductService
 {
     public void NewProduct(DAL<Product> product)
     {
-                Console.WriteLine("Digite o nome do seu novo produto");
+        Console.WriteLine("Digite o nome do seu novo produto");
         string product_name = Console.ReadLine();
         Console.WriteLine("Descrição");
         string description = Console.ReadLine();
         Console.WriteLine("Code");
         string code = Console.ReadLine();
-        Product product1 = new(product_name, code.ToString(), description, 105.4f, null, 1);
+        Product product1 = new(product_name, code.ToString(), description, 105.4f, null, 5);
         product.Create(product1);
     }
     public IEnumerable<Product> GetAll(DAL<Product> product)

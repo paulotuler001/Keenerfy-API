@@ -146,3 +146,5 @@ C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.API\bin\Debug\net8.0\Swashbuckl
 C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.API\obj\Debug\net8.0\Keenerfy.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.API\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\guga\programas_dev\c#\Keenerfy\Keenerfy.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll
