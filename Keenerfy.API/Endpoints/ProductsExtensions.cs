@@ -10,17 +10,21 @@ public static class ProductsExtensions
 {
     public static void ProductsEndpoints(this WebApplication app)
     {
-        app.MapGet("/products", ([FromServices] DAL<Product> dal) =>
+
+        var groupBuilder = app.MapGroup("products").RequireAuthorization()
+            .WithTags("Products");
+
+        groupBuilder.MapGet("/products", ([FromServices] DAL<Product> dal) =>
         {
             return dal.List();
         });
 
-        app.MapGet("/products/{name}", ([FromServices] DAL<Product> dal, string name) =>
+        groupBuilder.MapGet("/products/{name}", ([FromServices] DAL<Product> dal, string name) =>
         {
             return dal.FindBy(a => a.Name.ToUpper().Equals(name.ToUpper()));
         });
 
-        app.MapPost("/products", ([FromServices] DAL<Product> dal, [FromBody] ProductsRequest productRequest, int quantity) =>
+        groupBuilder.MapPost("/products", ([FromServices] DAL<Product> dal, [FromBody] ProductsRequest productRequest, int quantity) =>
         {
             var productToCreate = new Product(productRequest.Name, productRequest.Code, productRequest.Description, productRequest.Price, productRequest.Link, productRequest.Stock);
             dal.Create(productToCreate);
@@ -35,7 +39,7 @@ public static class ProductsExtensions
             return Results.Ok(productToCreate);
         });
 
-        app.MapPut("/products", ([FromServices] DAL<Product> dal, [FromBody] ProductsRequestEdit productRequestEdit) =>
+        groupBuilder.MapPut("/products", ([FromServices] DAL<Product> dal, [FromBody] ProductsRequestEdit productRequestEdit) =>
         {
             var productToUpdate = dal.FindBy(a => a.Id.Equals(productRequestEdit.Id));
             if (productToUpdate is null)
@@ -46,7 +50,7 @@ public static class ProductsExtensions
             return Results.Ok(productToUpdate);
         });
 
-        app.MapDelete("/products/{Code}", ([FromServices] DAL<Product> dal, [FromBody] string Code) =>
+        groupBuilder.MapDelete("/products/{Code}", ([FromServices] DAL<Product> dal, [FromBody] string Code) =>
         {
             var productToDelete = dal.FindBy(prod => prod.Code.ToUpper().Equals(Code.ToUpper()));
             dal.Remove(productToDelete);

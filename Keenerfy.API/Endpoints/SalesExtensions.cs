@@ -9,17 +9,20 @@ public static class SalesExtensions
 {
     public static void SalesEndpoints(this WebApplication app)
     {
-        app.MapGet("/sales", ([FromServices] DAL<Sale> dal) =>
+        var groupBuilder = app.MapGroup("sales").RequireAuthorization()
+            .WithTags("Sales");
+
+        groupBuilder.MapGet("/sales", ([FromServices] DAL<Sale> dal) =>
         {
             return dal.List();
         });
 
-        app.MapGet("/sales/{Id}", ([FromServices] DAL<Sale> dal, int Id) =>
+        groupBuilder.MapGet("/sales/{Id}", ([FromServices] DAL<Sale> dal, int Id) =>
         {
             return dal.FindBy(a => a.Id == Id);
         });
 
-        app.MapPost("/sales", ([FromServices] DAL<Sale> dal, SalesRequest salesRequest) =>
+        groupBuilder.MapPost("/sales", ([FromServices] DAL<Sale> dal, SalesRequest salesRequest) =>
         {
             DAL<Product> dalProduct = new DAL<Product>(new KeenerfyContext());
 
@@ -30,7 +33,7 @@ public static class SalesExtensions
             return Results.Ok(sales);
         });
 
-        app.MapDelete("/sales/{Id}", ([FromServices] DAL<Sale> dal, int Id) =>
+        groupBuilder.MapDelete("/sales/{Id}", ([FromServices] DAL<Sale> dal, int Id) =>
         {
             Sale saleToBeDeleted = dal.FindBy(a => a.Id == Id);
             dal.Remove(saleToBeDeleted);

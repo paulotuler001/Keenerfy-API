@@ -7,7 +7,10 @@ public static class PurchaseOrdersExtensions
 {
     public static void PurchaseOrderEndpoints(this WebApplication app)
     {
-        app.MapGet("/purchase-order", ([FromServices] DAL<PurchaseOrder> dal) =>
+        var groupBuilder = app.MapGroup("purchase-order").RequireAuthorization()
+           .WithTags("PurchaseOrder");
+
+        groupBuilder.MapGet("/purchase-order", ([FromServices] DAL<PurchaseOrder> dal) =>
         {
             return dal.List();
         });
