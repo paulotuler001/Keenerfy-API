@@ -2,6 +2,7 @@ using Keenerfy.API.Endpoints;
 using Keenerfy.Database;
 using Keenerfy.Keenerfy.Database;
 using Keenerfy.Models;
+using Keenerfy.Shared.Models.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -13,6 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<KeenerfyContext>();
 builder.Services.AddTransient<DAL<Product>>();
+builder.Services.AddTransient<DAL<PurchaseOrder>>();
 
 IConfiguration _config = builder.Configuration;
 
@@ -68,6 +70,7 @@ var app = builder.Build();
 
 app.UseCors("AllowSpecificOrigin");
 
+app.PurchaseOrderEndpoints();
 app.ProductsEndpoints();
 app.SalesEndpoints();
 app.UserEndpoints();
