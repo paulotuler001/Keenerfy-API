@@ -2,8 +2,11 @@ using Keenerfy.API.Endpoints;
 using Keenerfy.Database;
 using Keenerfy.Keenerfy.Database;
 using Keenerfy.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,7 +14,29 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<KeenerfyContext>();
 builder.Services.AddTransient<DAL<Product>>();
 
-builder.Services.AddAuthentication();
+IConfiguration _config = builder.Configuration;
+
+var key = Encoding.ASCII.GetBytes(_config["Jwt:Key"]);
+
+builder.Services.AddAuthentication(x =>
+{
+    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(x =>
+{
+    x.RequireHttpsMetadata = false;
+    x.SaveToken = true;
+    x.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(key),
+        ValidateIssuer = false,
+        ValidateAudience = false
+    };
+});
+
+
 builder.Services.AddAuthorizationBuilder()
     .AddPolicy("AllowAnonymous", policy => policy.RequireAssertion(context => true));
 
