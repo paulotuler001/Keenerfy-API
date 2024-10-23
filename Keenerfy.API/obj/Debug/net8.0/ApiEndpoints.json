@@ -247,7 +247,7 @@
   {
     "ContainingType": "Keenerfy.API.Endpoints.ProductsExtensions\u002B\u003C\u003Ec",
     "Method": "\u003CProductsEndpoints\u003Eb__0_0",
-    "RelativePath": "products/products",
+    "RelativePath": "products/",
     "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,
@@ -267,38 +267,8 @@
   },
   {
     "ContainingType": "Keenerfy.API.Endpoints.ProductsExtensions\u002B\u003C\u003Ec",
-    "Method": "\u003CProductsEndpoints\u003Eb__0_2",
-    "RelativePath": "products/products",
-    "HttpMethod": "POST",
-    "IsController": false,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "productRequest",
-        "Type": "Keenerfy.API.Requests.ProductsRequest",
-        "IsRequired": false
-      },
-      {
-        "Name": "quantity",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ],
-    "Tags": [
-      "Products"
-    ]
-  },
-  {
-    "ContainingType": "Keenerfy.API.Endpoints.ProductsExtensions\u002B\u003C\u003Ec",
-    "Method": "\u003CProductsEndpoints\u003Eb__0_3",
-    "RelativePath": "products/products",
+    "Method": "\u003CProductsEndpoints\u003Eb__0_4",
+    "RelativePath": "products/",
     "HttpMethod": "PUT",
     "IsController": false,
     "Order": 0,
@@ -322,8 +292,8 @@
   },
   {
     "ContainingType": "Keenerfy.API.Endpoints.ProductsExtensions\u002B\u003C\u003Ec",
-    "Method": "\u003CProductsEndpoints\u003Eb__0_4",
-    "RelativePath": "products/products/{Code}",
+    "Method": "\u003CProductsEndpoints\u003Eb__0_5",
+    "RelativePath": "products/{Code}",
     "HttpMethod": "DELETE",
     "IsController": false,
     "Order": 0,
@@ -347,8 +317,90 @@
   },
   {
     "ContainingType": "Keenerfy.API.Endpoints.ProductsExtensions\u002B\u003C\u003Ec",
+    "Method": "\u003CProductsEndpoints\u003Eb__0_6",
+    "RelativePath": "products/{Code}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Code",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Products"
+    ]
+  },
+  {
+    "ContainingType": "Keenerfy.API.Endpoints.ProductsExtensions\u002B\u003C\u003Ec",
+    "Method": "\u003CProductsEndpoints\u003Eb__0_3",
+    "RelativePath": "products/{userId}",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productRequest",
+        "Type": "Keenerfy.API.Requests.ProductsRequest",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Products"
+    ]
+  },
+  {
+    "ContainingType": "Keenerfy.API.Endpoints.ProductsExtensions\u002B\u003C\u003Ec",
+    "Method": "\u003CProductsEndpoints\u003Eb__0_2",
+    "RelativePath": "products/by-code/{Code}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Code",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Keenerfy.Models.Product",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Products"
+    ]
+  },
+  {
+    "ContainingType": "Keenerfy.API.Endpoints.ProductsExtensions\u002B\u003C\u003Ec",
     "Method": "\u003CProductsEndpoints\u003Eb__0_1",
-    "RelativePath": "products/products/{name}",
+    "RelativePath": "products/by-name/{name}",
     "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,
@@ -370,6 +422,25 @@
     ],
     "Tags": [
       "Products"
+    ]
+  },
+  {
+    "ContainingType": "Keenerfy.API.Endpoints.PurchaseOrdersExtensions\u002B\u003C\u003Ec",
+    "Method": "\u003CPurchaseOrderEndpoints\u003Eb__0_0",
+    "RelativePath": "purchase-order/purchase-order",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "PurchaseOrder"
     ]
   },
   {
@@ -504,17 +575,15 @@
   {
     "ContainingType": "Keenerfy.API.Endpoints.SalesExtensions\u002B\u003C\u003Ec",
     "Method": "\u003CSalesEndpoints\u003Eb__0_0",
-    "RelativePath": "sales/sales",
+    "RelativePath": "sales/",
     "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Keenerfy.Models.Sale, Keenerfy.Shared.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "application/json"
-        ],
+        "Type": "System.Void",
+        "MediaTypes": [],
         "StatusCode": 200
       }
     ],
@@ -525,7 +594,7 @@
   {
     "ContainingType": "Keenerfy.API.Endpoints.SalesExtensions\u002B\u003C\u003Ec",
     "Method": "\u003CSalesEndpoints\u003Eb__0_2",
-    "RelativePath": "sales/sales",
+    "RelativePath": "sales/",
     "HttpMethod": "POST",
     "IsController": false,
     "Order": 0,
@@ -550,7 +619,7 @@
   {
     "ContainingType": "Keenerfy.API.Endpoints.SalesExtensions\u002B\u003C\u003Ec",
     "Method": "\u003CSalesEndpoints\u003Eb__0_1",
-    "RelativePath": "sales/sales/{Id}",
+    "RelativePath": "sales/{Id}",
     "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,
@@ -577,7 +646,7 @@
   {
     "ContainingType": "Keenerfy.API.Endpoints.SalesExtensions\u002B\u003C\u003Ec",
     "Method": "\u003CSalesEndpoints\u003Eb__0_3",
-    "RelativePath": "sales/sales/{Id}",
+    "RelativePath": "sales/{Id}",
     "HttpMethod": "DELETE",
     "IsController": false,
     "Order": 0,
