@@ -7,7 +7,7 @@ public class Product
     {
 
     }
-    public Product(string name, string code, string description, float price, string link, int stock)
+    public Product(string name, string code, string description, float price, byte[] link, int stock)
     {
         Name = name;
         Code = code;
@@ -22,7 +22,7 @@ public class Product
     public string Name { get; set; }
     public string Description { get; set; }
     public float? Price { get; set; }
-    public string Link { get; set; }
+    public byte[] Link { get; set; }
     public int Stock { get; set; }
     public virtual ICollection<Sale> Sales { get; set; }
 }
