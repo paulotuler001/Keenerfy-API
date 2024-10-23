@@ -96,8 +96,33 @@
     ]
   },
   {
+    "ContainingType": "Keenerfy.API.Endpoints.UsersExtensions\u002B\u003C\u003Ec",
+    "Method": "\u003CUserEndpoints\u003Eb__0_1",
+    "RelativePath": "login/login",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Keenerfy.API.Requests.LoginsRequest",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Identity"
+    ]
+  },
+  {
     "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_1",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_4",
     "RelativePath": "logout",
     "HttpMethod": "POST",
     "IsController": false,
@@ -398,6 +423,31 @@
         ],
         "StatusCode": 400
       }
+    ]
+  },
+  {
+    "ContainingType": "Keenerfy.API.Endpoints.UsersExtensions\u002B\u003C\u003Ec",
+    "Method": "\u003CUserEndpoints\u003Eb__0_0",
+    "RelativePath": "register/register",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userRequest",
+        "Type": "Keenerfy.API.Requests.UsersRequest",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Identity"
     ]
   },
   {
