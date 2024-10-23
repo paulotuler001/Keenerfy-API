@@ -61,7 +61,7 @@ namespace Keenerfy.Shared.Data.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Price = table.Column<float>(type: "real", nullable: true),
-                    Link = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Link = table.Column<string>(type: "varbinary(max)", nullable: true),
                     Stock = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
