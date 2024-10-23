@@ -5,7 +5,7 @@ public record ProductsRequest(
     string Name, 
     string Code, 
     string Description, 
-    float Price, 
-    string? Link,
+    float Price,
+    byte[]? Link,
     int Stock
     );

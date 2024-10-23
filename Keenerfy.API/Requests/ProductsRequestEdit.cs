@@ -5,6 +5,6 @@ public record ProductsRequestEdit(
         string Code, 
         string Description, 
         float Price, 
-        string Link,
+        byte[] Link,
         int Stock
     );
