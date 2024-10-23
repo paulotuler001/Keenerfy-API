@@ -12,17 +12,22 @@ public static class SalesExtensions
         var groupBuilder = app.MapGroup("sales").RequireAuthorization()
             .WithTags("Sales");
 
-        groupBuilder.MapGet("/sales", ([FromServices] DAL<Sale> dal) =>
+        groupBuilder.MapGet("/", (HttpContext httpContext, [FromServices] DAL<Sale> dal) =>
         {
-            return dal.List();
+            IEnumerable<Sale> SaleList = dal.List();
+            if(SaleList is null || !SaleList.Any())
+            {
+                return Results.BadRequest();
+            }
+            return Results.Ok();
         });
 
-        groupBuilder.MapGet("/sales/{Id}", ([FromServices] DAL<Sale> dal, int Id) =>
+        groupBuilder.MapGet("/{Id}", ([FromServices] DAL<Sale> dal, int Id) =>
         {
-            return dal.FindBy(a => a.Id == Id);
+            return dal.FindBy(a => a.Id.Equals(Id));
         });
 
-        groupBuilder.MapPost("/sales", ([FromServices] DAL<Sale> dal, SalesRequest salesRequest) =>
+        groupBuilder.MapPost("/", ([FromServices] DAL<Sale> dal, SalesRequest salesRequest) =>
         {
             DAL<Product> dalProduct = new DAL<Product>(new KeenerfyContext());
 
@@ -30,12 +35,19 @@ public static class SalesExtensions
 
             var sales = new Sale(salesRequest.Date, salesRequest.Quantity, productToBeRelated);
             dal.Create(sales);
+
+            if(salesRequest.Quantity <= productToBeRelated.Stock)
+                productToBeRelated.Stock -= salesRequest.Quantity;
+            else
+                return Results.BadRequest("You can't buy more products than the existing ones");
+
+            dalProduct.Update(productToBeRelated);
             return Results.Ok(sales);
         });
 
-        groupBuilder.MapDelete("/sales/{Id}", ([FromServices] DAL<Sale> dal, int Id) =>
+        groupBuilder.MapDelete("/{Id}", ([FromServices] DAL<Sale> dal, int Id) =>
         {
-            Sale saleToBeDeleted = dal.FindBy(a => a.Id == Id);
+            Sale saleToBeDeleted = dal.FindBy(a => a.Id.Equals(Id));
             dal.Remove(saleToBeDeleted);
 
             return Results.NoContent();

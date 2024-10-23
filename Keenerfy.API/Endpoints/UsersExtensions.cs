@@ -80,10 +80,9 @@ public class TokenService : ITokenService
 
         var claims = new List<Claim>
         {
-            new(ClaimTypes.NameIdentifier, user.Id.ToString()), // ID do usuário
-            new(ClaimTypes.Email, user.Email), // E-mail do usuário
-            new(ClaimTypes.Name, user.UserName) // Nome de usuário
-            // Você pode adicionar mais claims se precisar
+            new(ClaimTypes.NameIdentifier, user.Id.ToString()),
+            new(ClaimTypes.Email, user.Email),
+            new(ClaimTypes.Name, user.UserName)
         };
 
         var tokenDescriptor = new SecurityTokenDescriptor

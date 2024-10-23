@@ -14,32 +14,43 @@ public static class ProductsExtensions
         var groupBuilder = app.MapGroup("products").RequireAuthorization()
             .WithTags("Products");
 
-        groupBuilder.MapGet("/products", ([FromServices] DAL<Product> dal) =>
+        groupBuilder.MapGet("/", ([FromServices] DAL<Product> dal) =>
         {
             return dal.List();
         });
 
-        groupBuilder.MapGet("/products/{name}", ([FromServices] DAL<Product> dal, string name) =>
+        groupBuilder.MapGet("/by-name/{name}", ([FromServices] DAL<Product> dal, string name) =>
         {
             return dal.FindBy(a => a.Name.ToUpper().Equals(name.ToUpper()));
         });
+        
+        groupBuilder.MapGet("/by-code/{Code}", ([FromServices] DAL<Product> dal, string Code) =>
+        {
+            return dal.FindBy(a => a.Code.ToUpper().Equals(Code.ToUpper()));
+        });
 
-        groupBuilder.MapPost("/products", ([FromServices] DAL<Product> dal, [FromBody] ProductsRequest productRequest, int quantity) =>
+        groupBuilder.MapPost("/{userId}", ([FromServices] DAL<Product> dal, [FromBody] ProductsRequest productRequest, string userId) =>
         {
             var productToCreate = new Product(productRequest.Name, productRequest.Code, productRequest.Description, productRequest.Price, productRequest.Link, productRequest.Stock);
-            dal.Create(productToCreate);
-            if(quantity > 0)
-            {
-                DAL<PurchaseOrder> purchaseOrderDal = new DAL<PurchaseOrder>(new KeenerfyContext());
+            var alreadyExisted = dal.FindBy(a => a.Code.ToUpper().Equals(productRequest.Code.ToUpper()));
 
-                PurchaseOrder purchaseOrder = new(DateTime.Now, quantity, productToCreate);
-                purchaseOrderDal.Create(purchaseOrder);
+            dal.Create(productToCreate);
+
+            if(alreadyExisted is not null)
+            {
+                return Results.BadRequest("This code already exist in our system");
             }
 
+            if(productRequest.Stock > 0)
+            {
+                DAL<PurchaseOrder> purchaseOrderDal = new DAL<PurchaseOrder>(new KeenerfyContext());
+                PurchaseOrder purchaseOrder = new(DateTime.Now, productRequest.Stock, productToCreate.Id, userId);
+                purchaseOrderDal.Create(purchaseOrder);
+            }
             return Results.Ok(productToCreate);
         });
 
-        groupBuilder.MapPut("/products", ([FromServices] DAL<Product> dal, [FromBody] ProductsRequestEdit productRequestEdit) =>
+        groupBuilder.MapPut("/", ([FromServices] DAL<Product> dal, [FromBody] ProductsRequestEdit productRequestEdit) =>
         {
             var productToUpdate = dal.FindBy(a => a.Id.Equals(productRequestEdit.Id));
             if (productToUpdate is null)
@@ -50,12 +61,27 @@ public static class ProductsExtensions
             return Results.Ok(productToUpdate);
         });
 
-        groupBuilder.MapDelete("/products/{Code}", ([FromServices] DAL<Product> dal, [FromBody] string Code) =>
+        groupBuilder.MapDelete("/{Code}", ([FromServices] DAL<Product> dal, string Code) =>
         {
             var productToDelete = dal.FindBy(prod => prod.Code.ToUpper().Equals(Code.ToUpper()));
             dal.Remove(productToDelete);
 
             return Results.NoContent();
+        });
+
+        groupBuilder.MapPut("/{Code}", ([FromServices] DAL<Product> dal, string Code) =>
+        {
+            var productToUpdate = dal.FindBy(a => a.Code.Equals(Code));
+            if (productToUpdate is null)
+            {
+                return Results.NotFound();
+            }
+
+            productToUpdate.Stock -= 1;
+
+            dal.Update(productToUpdate);
+
+            return Results.Ok();
         });
     }
 }

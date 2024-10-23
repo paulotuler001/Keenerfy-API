@@ -1,4 +1,8 @@
-﻿using Keenerfy.Keenerfy.Database;
+﻿
+using Keenerfy.API.Requests;
+using Keenerfy.Database;
+using Keenerfy.Keenerfy.Database;
+using Keenerfy.Models;
 using Keenerfy.Shared.Models.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,9 +14,15 @@ public static class PurchaseOrdersExtensions
         var groupBuilder = app.MapGroup("purchase-order").RequireAuthorization()
            .WithTags("PurchaseOrder");
 
-        groupBuilder.MapGet("/purchase-order", ([FromServices] DAL<PurchaseOrder> dal) =>
+        groupBuilder.MapGet("/", ([FromServices] DAL<PurchaseOrder> dal) =>
         {
-            return dal.List();
+            IEnumerable<PurchaseOrder> purchaseOrders = dal.List();
+
+            if(purchaseOrders is not null)
+            {
+                return Results.Ok(purchaseOrders);
+            }
+            return Results.NoContent();
         });
     }
 }
