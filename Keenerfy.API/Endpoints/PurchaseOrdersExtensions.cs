@@ -18,11 +18,13 @@ public static class PurchaseOrdersExtensions
         {
             IEnumerable<PurchaseOrder> purchaseOrders = dal.List();
 
-            if(purchaseOrders is not null)
+            var purchaseOrdersDTO = purchaseOrders.Select(s => new
             {
-                return Results.Ok(purchaseOrders);
-            }
-            return Results.NoContent();
+                s.Quantity,
+                s.Product.Price,
+                s.Product.Name
+            });
+            return Results.Ok(purchaseOrdersDTO);
         });
     }
 }
