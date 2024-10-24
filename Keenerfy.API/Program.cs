@@ -58,17 +58,19 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowSpecificOrigin", builder =>
+    options.AddDefaultPolicy(
+    policy =>
     {
-        builder.WithOrigins("*")
-               .AllowAnyMethod()
-               .AllowAnyHeader();
+        policy.AllowAnyHeader()
+            .AllowAnyOrigin()
+            .AllowAnyMethod();
     });
 });
 
+
 var app = builder.Build();
 
-app.UseCors("AllowSpecificOrigin");
+app.UseCors();
 
 app.PurchaseOrderEndpoints();
 app.ProductsEndpoints();
