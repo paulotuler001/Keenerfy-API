@@ -26,7 +26,17 @@ public static class ProductsExtensions
         
         groupBuilder.MapGet("/by-code/{Code}", ([FromServices] DAL<Product> dal, string Code) =>
         {
-            return dal.FindBy(a => a.Code.ToUpper().Equals(Code.ToUpper()));
+            var Product = dal.FindBy(a => a.Code.ToUpper().Equals(Code.ToUpper()));
+            var ProductDTO = new
+            {
+                Product.Code,
+                Product.Link,
+                Product.Description,
+                Product.Price,
+                Product.Name
+            };
+
+            return ProductDTO;
         });
 
         groupBuilder.MapPost("/{userId}", ([FromServices] DAL<Product> dal, [FromBody] ProductsRequest productRequest, string userId) =>
