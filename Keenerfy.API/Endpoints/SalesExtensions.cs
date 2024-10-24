@@ -2,6 +2,7 @@
 using Keenerfy.Database;
 using Keenerfy.Keenerfy.Database;
 using Keenerfy.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Keenerfy.API.Endpoints;
@@ -19,21 +20,40 @@ public static class SalesExtensions
             {
                 return Results.BadRequest();
             }
-            return Results.Ok();
+            var saleDTO = SaleList.Select(s => new
+            {
+                s.Quantity,
+                s.Product.Code,
+                s.Product.Name
+            });
+
+            return Results.Ok(saleDTO);
         });
 
-        groupBuilder.MapGet("/{Id}", ([FromServices] DAL<Sale> dal, int Id) =>
+        groupBuilder.MapGet("/{Id}", ([FromServices] DAL<Sale> dal, string Id) =>
         {
-            return dal.FindBy(a => a.Id.Equals(Id));
+
+            IEnumerable<Sale> SaleList = dal.List();
+
+            var FilteredSaleList = SaleList.Where(sale => sale.Users.Id.Equals(Id));
+
+            var saleDTO = FilteredSaleList.Select(s => new
+            {
+                s.Quantity,
+                s.Product.Code,
+                s.Product.Name
+            });
+
+            return saleDTO;
         });
 
-        groupBuilder.MapPost("/", ([FromServices] DAL<Sale> dal, SalesRequest salesRequest) =>
+        groupBuilder.MapPost("/{Id}", ([FromServices] DAL<Sale> dal, SalesRequest salesRequest, string Id) =>
         {
             DAL<Product> dalProduct = new DAL<Product>(new KeenerfyContext());
 
-            Product productToBeRelated = dalProduct.FindBy(prod => prod.Code.Equals(salesRequest.productRequest.Code));
+            Product productToBeRelated = dalProduct.FindBy(prod => prod.Code.Equals(salesRequest.ProductCode));
 
-            var sales = new Sale(salesRequest.Date, salesRequest.Quantity, productToBeRelated);
+            var sales = new Sale(DateTime.Now, salesRequest.Quantity, productToBeRelated.Id, Id);
             dal.Create(sales);
 
             if(salesRequest.Quantity <= productToBeRelated.Stock)
