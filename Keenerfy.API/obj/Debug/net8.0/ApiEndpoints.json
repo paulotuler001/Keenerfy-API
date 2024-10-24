@@ -386,7 +386,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Keenerfy.Models.Product",
+        "Type": "\u003C\u003Ef__AnonymousType0\u00605[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Byte[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Nullable\u00601[[System.Single, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "application/json"
         ],
@@ -427,7 +427,7 @@
   {
     "ContainingType": "Keenerfy.API.Endpoints.PurchaseOrdersExtensions\u002B\u003C\u003Ec",
     "Method": "\u003CPurchaseOrderEndpoints\u003Eb__0_0",
-    "RelativePath": "purchase-order/purchase-order",
+    "RelativePath": "purchase-order/",
     "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,
@@ -593,22 +593,24 @@
   },
   {
     "ContainingType": "Keenerfy.API.Endpoints.SalesExtensions\u002B\u003C\u003Ec",
-    "Method": "\u003CSalesEndpoints\u003Eb__0_2",
-    "RelativePath": "sales/",
-    "HttpMethod": "POST",
+    "Method": "\u003CSalesEndpoints\u003Eb__0_1",
+    "RelativePath": "sales/{Id}",
+    "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "salesRequest",
-        "Type": "Keenerfy.API.Requests.SalesRequest",
+        "Name": "Id",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[\u003C\u003Ef__AnonymousType2\u00603[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Keenerfy.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
         "StatusCode": 200
       }
     ],
@@ -618,24 +620,27 @@
   },
   {
     "ContainingType": "Keenerfy.API.Endpoints.SalesExtensions\u002B\u003C\u003Ec",
-    "Method": "\u003CSalesEndpoints\u003Eb__0_1",
+    "Method": "\u003CSalesEndpoints\u003Eb__0_2",
     "RelativePath": "sales/{Id}",
-    "HttpMethod": "GET",
+    "HttpMethod": "POST",
     "IsController": false,
     "Order": 0,
     "Parameters": [
       {
+        "Name": "salesRequest",
+        "Type": "Keenerfy.API.Requests.SalesRequest",
+        "IsRequired": false
+      },
+      {
         "Name": "Id",
-        "Type": "System.Int32",
-        "IsRequired": true
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Keenerfy.Models.Sale",
-        "MediaTypes": [
-          "application/json"
-        ],
+        "Type": "System.Void",
+        "MediaTypes": [],
         "StatusCode": 200
       }
     ],

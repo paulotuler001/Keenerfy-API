@@ -1,4 +1,5 @@
 using Keenerfy.API.Endpoints;
+using Keenerfy.API.Requests;
 using Keenerfy.Database;
 using Keenerfy.Keenerfy.Database;
 using Keenerfy.Models;
@@ -15,6 +16,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<KeenerfyContext>();
 builder.Services.AddTransient<DAL<Product>>();
 builder.Services.AddTransient<DAL<PurchaseOrder>>();
+builder.Services.AddTransient<DAL<Sale>>();
 
 IConfiguration _config = builder.Configuration;
 

@@ -3,44 +3,45 @@
   "WorkspaceRootPath": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CCB02039-B408-45C4-8C19-FCECFBBDF663}|Keenerfy.API\\Keenerfy.API.csproj|c:\\users\\guga\\programas_dev\\c#\\keenerfy\\keenerfy.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCB02039-B408-45C4-8C19-FCECFBBDF663}|Keenerfy.API\\Keenerfy.API.csproj|solutionrelative:keenerfy.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CCB02039-B408-45C4-8C19-FCECFBBDF663}|Keenerfy.API\\Keenerfy.API.csproj|c:\\users\\guga\\programas_dev\\c#\\keenerfy\\keenerfy.api\\endpoints\\purchaseordersextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCB02039-B408-45C4-8C19-FCECFBBDF663}|Keenerfy.API\\Keenerfy.API.csproj|solutionrelative:keenerfy.api\\endpoints\\purchaseordersextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDB6FBC2-EF78-4841-9E66-A83AA21D472A}|Keenerfy.Shared.Models\\Keenerfy.Shared.Models.csproj|c:\\users\\guga\\programas_dev\\c#\\keenerfy\\keenerfy.shared.models\\models\\purchaseorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDB6FBC2-EF78-4841-9E66-A83AA21D472A}|Keenerfy.Shared.Models\\Keenerfy.Shared.Models.csproj|solutionrelative:keenerfy.shared.models\\models\\purchaseorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDB6FBC2-EF78-4841-9E66-A83AA21D472A}|Keenerfy.Shared.Models\\Keenerfy.Shared.Models.csproj|c:\\users\\guga\\programas_dev\\c#\\keenerfy\\keenerfy.shared.models\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDB6FBC2-EF78-4841-9E66-A83AA21D472A}|Keenerfy.Shared.Models\\Keenerfy.Shared.Models.csproj|solutionrelative:keenerfy.shared.models\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCB02039-B408-45C4-8C19-FCECFBBDF663}|Keenerfy.API\\Keenerfy.API.csproj|c:\\users\\guga\\programas_dev\\c#\\keenerfy\\keenerfy.api\\endpoints\\productsextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCB02039-B408-45C4-8C19-FCECFBBDF663}|Keenerfy.API\\Keenerfy.API.csproj|solutionrelative:keenerfy.api\\endpoints\\productsextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCB02039-B408-45C4-8C19-FCECFBBDF663}|Keenerfy.API\\Keenerfy.API.csproj|c:\\users\\guga\\programas_dev\\c#\\keenerfy\\keenerfy.api\\endpoints\\salesextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCB02039-B408-45C4-8C19-FCECFBBDF663}|Keenerfy.API\\Keenerfy.API.csproj|solutionrelative:keenerfy.api\\endpoints\\salesextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCB02039-B408-45C4-8C19-FCECFBBDF663}|Keenerfy.API\\Keenerfy.API.csproj|c:\\users\\guga\\programas_dev\\c#\\keenerfy\\keenerfy.api\\requests\\productsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCB02039-B408-45C4-8C19-FCECFBBDF663}|Keenerfy.API\\Keenerfy.API.csproj|solutionrelative:keenerfy.api\\requests\\productsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CCB02039-B408-45C4-8C19-FCECFBBDF663}|Keenerfy.API\\Keenerfy.API.csproj|c:\\users\\guga\\programas_dev\\c#\\keenerfy\\keenerfy.api\\endpoints\\productsextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCB02039-B408-45C4-8C19-FCECFBBDF663}|Keenerfy.API\\Keenerfy.API.csproj|solutionrelative:keenerfy.api\\endpoints\\productsextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCB02039-B408-45C4-8C19-FCECFBBDF663}|Keenerfy.API\\Keenerfy.API.csproj|c:\\users\\guga\\programas_dev\\c#\\keenerfy\\keenerfy.api\\requests\\salesrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCB02039-B408-45C4-8C19-FCECFBBDF663}|Keenerfy.API\\Keenerfy.API.csproj|solutionrelative:keenerfy.api\\requests\\salesrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCB02039-B408-45C4-8C19-FCECFBBDF663}|Keenerfy.API\\Keenerfy.API.csproj|c:\\users\\guga\\programas_dev\\c#\\keenerfy\\keenerfy.api\\endpoints\\usersextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCB02039-B408-45C4-8C19-FCECFBBDF663}|Keenerfy.API\\Keenerfy.API.csproj|solutionrelative:keenerfy.api\\endpoints\\usersextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6751DD34-2795-4595-8BEB-A0A052E4A085}|Keenerfy.Shared.Data\\Keenerfy.Shared.Data.csproj|c:\\users\\guga\\programas_dev\\c#\\keenerfy\\keenerfy.shared.data\\database\\keenerfycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6751DD34-2795-4595-8BEB-A0A052E4A085}|Keenerfy.Shared.Data\\Keenerfy.Shared.Data.csproj|solutionrelative:keenerfy.shared.data\\database\\keenerfycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/keenerfyserver.database.windows.net_1433/KeenerfyV2/guga/SqlTable/dbo.Sales.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/keenerfyserver.database.windows.net_1433/KeenerfyV2/guga/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6751DD34-2795-4595-8BEB-A0A052E4A085}|Keenerfy.Shared.Data\\Keenerfy.Shared.Data.csproj|c:\\users\\guga\\programas_dev\\c#\\keenerfy\\keenerfy.shared.data\\database\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6751DD34-2795-4595-8BEB-A0A052E4A085}|Keenerfy.Shared.Data\\Keenerfy.Shared.Data.csproj|solutionrelative:keenerfy.shared.data\\database\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDB6FBC2-EF78-4841-9E66-A83AA21D472A}|Keenerfy.Shared.Models\\Keenerfy.Shared.Models.csproj|c:\\users\\guga\\programas_dev\\c#\\keenerfy\\keenerfy.shared.models\\models\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDB6FBC2-EF78-4841-9E66-A83AA21D472A}|Keenerfy.Shared.Models\\Keenerfy.Shared.Models.csproj|solutionrelative:keenerfy.shared.models\\models\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCB02039-B408-45C4-8C19-FCECFBBDF663}|Keenerfy.API\\Keenerfy.API.csproj|c:\\users\\guga\\programas_dev\\c#\\keenerfy\\keenerfy.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCB02039-B408-45C4-8C19-FCECFBBDF663}|Keenerfy.API\\Keenerfy.API.csproj|solutionrelative:keenerfy.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/keenerfyserver.database.windows.net_1433/KeenerfyV2/guga/SqlTable/dbo.Products.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +51,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,132 +59,136 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.Shared.Models\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "Keenerfy.Shared.Models\\Models\\Product.cs",
-              "ToolTip": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.Shared.Models\\Models\\Product.cs",
-              "RelativeToolTip": "Keenerfy.Shared.Models\\Models\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T23:46:51.208Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PurchaseOrder.cs",
-              "DocumentMoniker": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.Shared.Models\\Models\\PurchaseOrder.cs",
-              "RelativeDocumentMoniker": "Keenerfy.Shared.Models\\Models\\PurchaseOrder.cs",
-              "ToolTip": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.Shared.Models\\Models\\PurchaseOrder.cs",
-              "RelativeToolTip": "Keenerfy.Shared.Models\\Models\\PurchaseOrder.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T23:46:49.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "KeenerfyContext.cs",
-              "DocumentMoniker": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.Shared.Data\\Database\\KeenerfyContext.cs",
-              "RelativeDocumentMoniker": "Keenerfy.Shared.Data\\Database\\KeenerfyContext.cs",
-              "ToolTip": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.Shared.Data\\Database\\KeenerfyContext.cs",
-              "RelativeToolTip": "Keenerfy.Shared.Data\\Database\\KeenerfyContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAswAoAAAAeAAAAAAAAAA==",
+              "Title": "Sale.cs",
+              "DocumentMoniker": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.Shared.Models\\Models\\Sale.cs",
+              "RelativeDocumentMoniker": "Keenerfy.Shared.Models\\Models\\Sale.cs",
+              "ToolTip": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.Shared.Models\\Models\\Sale.cs",
+              "RelativeToolTip": "Keenerfy.Shared.Models\\Models\\Sale.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T23:39:10.007Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PurchaseOrdersExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.API\\Endpoints\\PurchaseOrdersExtensions.cs",
-              "RelativeDocumentMoniker": "Keenerfy.API\\Endpoints\\PurchaseOrdersExtensions.cs",
-              "ToolTip": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.API\\Endpoints\\PurchaseOrdersExtensions.cs",
-              "RelativeToolTip": "Keenerfy.API\\Endpoints\\PurchaseOrdersExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T23:00:41.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProductsExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.API\\Endpoints\\ProductsExtensions.cs",
-              "RelativeDocumentMoniker": "Keenerfy.API\\Endpoints\\ProductsExtensions.cs",
-              "ToolTip": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.API\\Endpoints\\ProductsExtensions.cs",
-              "RelativeToolTip": "Keenerfy.API\\Endpoints\\ProductsExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T22:39:38.447Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SalesExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.API\\Endpoints\\SalesExtensions.cs",
-              "RelativeDocumentMoniker": "Keenerfy.API\\Endpoints\\SalesExtensions.cs",
-              "ToolTip": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.API\\Endpoints\\SalesExtensions.cs",
-              "RelativeToolTip": "Keenerfy.API\\Endpoints\\SalesExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T22:59:26.441Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UsersExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.API\\Endpoints\\UsersExtensions.cs",
-              "RelativeDocumentMoniker": "Keenerfy.API\\Endpoints\\UsersExtensions.cs",
-              "ToolTip": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.API\\Endpoints\\UsersExtensions.cs",
-              "RelativeToolTip": "Keenerfy.API\\Endpoints\\UsersExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T22:59:22.389Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProductsRequest.cs",
-              "DocumentMoniker": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.API\\Requests\\ProductsRequest.cs",
-              "RelativeDocumentMoniker": "Keenerfy.API\\Requests\\ProductsRequest.cs",
-              "ToolTip": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.API\\Requests\\ProductsRequest.cs",
-              "RelativeToolTip": "Keenerfy.API\\Requests\\ProductsRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T22:49:24.783Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.API\\Program.cs",
-              "RelativeDocumentMoniker": "Keenerfy.API\\Program.cs",
-              "ToolTip": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.API\\Program.cs",
-              "RelativeToolTip": "Keenerfy.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T23:33:08.612Z",
+              "WhenOpened": "2024-10-24T04:15:09.362Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.API\\Program.cs",
+              "RelativeDocumentMoniker": "Keenerfy.API\\Program.cs",
+              "ToolTip": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.API\\Program.cs",
+              "RelativeToolTip": "Keenerfy.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T04:30:39.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SalesRequest.cs",
+              "DocumentMoniker": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.API\\Requests\\SalesRequest.cs",
+              "RelativeDocumentMoniker": "Keenerfy.API\\Requests\\SalesRequest.cs",
+              "ToolTip": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.API\\Requests\\SalesRequest.cs",
+              "RelativeToolTip": "Keenerfy.API\\Requests\\SalesRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T04:28:23.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "DAL.cs",
               "DocumentMoniker": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.Shared.Data\\Database\\DAL.cs",
               "RelativeDocumentMoniker": "Keenerfy.Shared.Data\\Database\\DAL.cs",
               "ToolTip": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.Shared.Data\\Database\\DAL.cs",
               "RelativeToolTip": "Keenerfy.Shared.Data\\Database\\DAL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAgwB4AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T22:42:51.122Z",
+              "WhenOpened": "2024-10-24T04:15:28.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "dbo.Sales [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/keenerfyserver.database.windows.net_1433/KeenerfyV2/guga/SqlTable/dbo.Sales.sql",
+              "ToolTip": "dbo.Sales [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-10-24T04:09:16.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "dbo.Products [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/keenerfyserver.database.windows.net_1433/KeenerfyV2/guga/SqlTable/dbo.Products.sql",
+              "ToolTip": "dbo.Products [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-10-24T04:02:27.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "dbo.AspNetUsers [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/keenerfyserver.database.windows.net_1433/KeenerfyV2/guga/SqlTable/dbo.AspNetUsers.sql",
+              "ToolTip": "dbo.AspNetUsers [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-10-24T02:03:15.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsersExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.API\\Endpoints\\UsersExtensions.cs",
+              "RelativeDocumentMoniker": "Keenerfy.API\\Endpoints\\UsersExtensions.cs",
+              "ToolTip": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.API\\Endpoints\\UsersExtensions.cs",
+              "RelativeToolTip": "Keenerfy.API\\Endpoints\\UsersExtensions.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAawEEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T23:53:02.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SalesExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.API\\Endpoints\\SalesExtensions.cs",
+              "RelativeDocumentMoniker": "Keenerfy.API\\Endpoints\\SalesExtensions.cs",
+              "ToolTip": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.API\\Endpoints\\SalesExtensions.cs",
+              "RelativeToolTip": "Keenerfy.API\\Endpoints\\SalesExtensions.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwBYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T23:52:54.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PurchaseOrdersExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.API\\Endpoints\\PurchaseOrdersExtensions.cs",
+              "RelativeDocumentMoniker": "Keenerfy.API\\Endpoints\\PurchaseOrdersExtensions.cs",
+              "ToolTip": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.API\\Endpoints\\PurchaseOrdersExtensions.cs",
+              "RelativeToolTip": "Keenerfy.API\\Endpoints\\PurchaseOrdersExtensions.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T23:52:40.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductsExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.API\\Endpoints\\ProductsExtensions.cs",
+              "RelativeDocumentMoniker": "Keenerfy.API\\Endpoints\\ProductsExtensions.cs",
+              "ToolTip": "C:\\Users\\guga\\programas_dev\\c#\\Keenerfy\\Keenerfy.API\\Endpoints\\ProductsExtensions.cs",
+              "RelativeToolTip": "Keenerfy.API\\Endpoints\\ProductsExtensions.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAD4vyYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T23:52:39.279Z",
               "EditorCaption": ""
             }
           ]
