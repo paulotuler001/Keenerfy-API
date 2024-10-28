@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Keenerfy.Shared.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56910a3e4507b55237bd51ed392f692f54b584fb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f5b05e0a045d101f83561ad2b63f0b41d10628e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Keenerfy.Shared.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Keenerfy.Shared.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

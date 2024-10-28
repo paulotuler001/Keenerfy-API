@@ -2,5 +2,5 @@
 public record SalesRequest(
     int Quantity, 
     string ProductCode,
-    string name
+    string? Name
     );
