@@ -33,7 +33,8 @@ public static class ProductsExtensions
                 Product.Link,
                 Product.Description,
                 Product.Price,
-                Product.Name
+                Product.Name,
+                Product.Stock
             };
 
             return ProductDTO;
@@ -54,6 +55,7 @@ public static class ProductsExtensions
             if(productRequest.Stock > 0)
             {
                 DAL<PurchaseOrder> purchaseOrderDal = new DAL<PurchaseOrder>(new KeenerfyContext());
+
                 PurchaseOrder purchaseOrder = new(DateTime.Now, productRequest.Stock, productToCreate.Id, userId);
                 purchaseOrderDal.Create(purchaseOrder);
             }
@@ -62,11 +64,17 @@ public static class ProductsExtensions
 
         groupBuilder.MapPut("/", ([FromServices] DAL<Product> dal, [FromBody] ProductsRequestEdit productRequestEdit) =>
         {
-            var productToUpdate = dal.FindBy(a => a.Id.Equals(productRequestEdit.Id));
+            var productToUpdate = dal.FindBy(a => a.Code.Equals(productRequestEdit.Code));
             if (productToUpdate is null)
             {
                 return Results.NotFound();
             }
+            productToUpdate.Price = productRequestEdit.Price;
+            productToUpdate.Stock = (int)productRequestEdit.Stock;
+            productToUpdate.Link = productRequestEdit.Link;
+            productToUpdate.Name = productRequestEdit.Name;
+            productToUpdate.Description = productRequestEdit.Description;
+
             dal.Update(productToUpdate);
             return Results.Ok(productToUpdate);
         });
