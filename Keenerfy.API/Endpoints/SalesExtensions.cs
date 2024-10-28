@@ -16,10 +16,7 @@ public static class SalesExtensions
         groupBuilder.MapGet("/", (HttpContext httpContext, [FromServices] DAL<Sale> dal) =>
         {
             IEnumerable<Sale> SaleList = dal.List();
-            if(SaleList is null || !SaleList.Any())
-            {
-                return Results.BadRequest();
-            }
+
             var saleDTO = SaleList.Select(s => new
             {
                 s.Quantity,
@@ -47,20 +44,22 @@ public static class SalesExtensions
             return saleDTO;
         });
 
-        groupBuilder.MapPost("/{Id}", ([FromServices] DAL<Sale> dal, SalesRequest salesRequest, string Id) =>
+        groupBuilder.MapPost("/{Id}", ([FromServices] DAL<Sale> dal, [FromBody] SalesRequest salesRequest, string Id) =>
         {
             DAL<Product> dalProduct = new DAL<Product>(new KeenerfyContext());
 
             Product productToBeRelated = dalProduct.FindBy(prod => prod.Code.Equals(salesRequest.ProductCode));
+            DAL<User> dalUser = new DAL<User>(new KeenerfyContext());
 
-            var sales = new Sale(DateTime.Now, salesRequest.Quantity, productToBeRelated.Id, Id);
-            dal.Create(sales);
+            User user = dalUser.FindBy(a => a.Id.Equals(Id));
+            var sales = new Sale(DateTime.Now, salesRequest.Quantity, productToBeRelated.Id, user.Id);
 
             if(salesRequest.Quantity <= productToBeRelated.Stock)
                 productToBeRelated.Stock -= salesRequest.Quantity;
             else
                 return Results.BadRequest("You can't buy more products than the existing ones");
 
+            dal.Create(sales);
             dalProduct.Update(productToBeRelated);
             return Results.Ok(sales);
         });
