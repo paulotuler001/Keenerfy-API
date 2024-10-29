@@ -2,12 +2,12 @@
 public class Sale
 {
     public Sale() { }
-    public Sale(DateTime date, int quantity, int product, string users) 
+    public Sale(DateTime date, int quantity, int productId, string userId) 
     {
         Date = date;
         Quantity = quantity;
-        ProductId = product;
-        UsersId = users;
+        ProductId = productId;
+        UsersId = userId;
     }
     public int Id { get; set; }
     public DateTime Date { get; set; }

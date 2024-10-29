@@ -4,12 +4,12 @@ namespace Keenerfy.Shared.Models.Models;
 public class PurchaseOrder
 {
     public PurchaseOrder() { }
-    public PurchaseOrder(DateTime date, int quantity, int productId, string usersId)
+    public PurchaseOrder(DateTime date, int quantity, int productId, string userId)
     {
         Date = date;
         Quantity = quantity;
         ProductId = productId;
-        UsersId = usersId;
+        UsersId = userId;
     }
     public int Id { get; set; }
     public DateTime Date { get; set; }
